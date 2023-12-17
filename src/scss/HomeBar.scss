@@ -1,0 +1,39 @@
+@import "./global/variables.scss";
+@import "./global/font.scss";
+.custom-navbar {
+  padding-top: 40px;
+  font-family: $basic-font;
+  min-height: 50px;
+  .custom-container {
+    display: flex;
+    justify-content: space-around;
+
+    .wrapper {
+      @media screen and (max-width: 770px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    #me-auto-container {
+      max-width: 300px;
+
+      .me-auto {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .category:hover {
+          color: $bright-red;
+        }
+      }
+      .login-button {
+        background: $bright-red;
+        padding: 8px 25px;
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+    }
+  }
+}

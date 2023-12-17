@@ -1,0 +1,56 @@
+@import "./global/variables.scss";
+@import "./global/font.scss";
+
+.footer-content {
+  width: 100vw;
+  min-height: 50px;
+  background: $dark-blue;
+  font-family: $basic-font;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .navigation {
+    @media screen and (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .navbar-container {
+      .categories {
+        margin-left: 100px;
+
+        .title {
+          color: #ffffff;
+        }
+        :hover {
+          color: $bright-red;
+        }
+        @media screen and (max-width: 425px) {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    a {
+      padding: 15px;
+      :hover {
+        fill: $bright-red;
+        cursor: pointer;
+      }
+    }
+  }
+}

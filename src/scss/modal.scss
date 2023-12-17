@@ -1,0 +1,20 @@
+@import "./global/variables.scss";
+@import "./global/font.scss";
+
+.Alert {
+  font-family: $basic-font;
+  background: $white;
+  border: 2px solid $dark-blue;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999999;
+  Button {
+    background: $light-blue;
+    color: $white;
+    &:hover {
+      background: darkblue;
+    }
+  }
+}
