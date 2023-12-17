@@ -26,7 +26,7 @@ function Modal() {
         </p>
 
         <div className="d-flex justify-content-end">
-          <Button onClick={() => setShow(false)} variant="outline-success">
+          <Button onClick={() => setShow(false)} variant="outline-primary">
             Close me
           </Button>
         </div>

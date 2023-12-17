@@ -10,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 530px) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,7 +20,7 @@
   }
 
   .navigation {
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 530px) {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -35,7 +35,7 @@
         :hover {
           color: $bright-red;
         }
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 530px) {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;

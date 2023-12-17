@@ -2,6 +2,9 @@
 @import "./global/font.scss";
 
 .Alert {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 1em;
   font-family: $basic-font;
   background: $white;
   border: 2px solid $dark-blue;
@@ -10,6 +13,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99999999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
   Button {
     background: $light-blue;
     color: $white;
