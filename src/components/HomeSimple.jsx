@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "../scss/HomeSimple.scss";
 import CustomAlert from "./CustomAlert";
+import image from "../assets/illustration-hero.svg";
 
 function HomeSimple() {
   const [showAlert, setShowAlert] = useState(false);
@@ -43,7 +44,7 @@ function HomeSimple() {
       </div>
       <div className="additional-content">
         <div className="hero-image">
-          <img src="src\assets\illustration-hero.svg" alt="image" />
+          <img src={image} alt="image" />
         </div>
         <div className="additional-block"></div>
       </div>

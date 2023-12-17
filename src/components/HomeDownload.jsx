@@ -4,6 +4,9 @@ import Card from "react-bootstrap/Card";
 import "../scss/HomeDownload.scss";
 import CustomAlert from "./CustomAlert";
 import Dots from "../assets/bg-dots.svg";
+import image from "../assets/logo-chrome.svg";
+import image2 from "../assets/logo-firefox.svg";
+import image3 from "../assets/logo-opera.svg";
 
 function HomeDownload() {
   const [showAlert, setShowAlert] = useState(false);
@@ -29,11 +32,7 @@ function HomeDownload() {
       </div>
       <div className="cards">
         <Card className="card">
-          <Card.Img
-            variant="top"
-            className="image"
-            src="src\assets\logo-chrome.svg"
-          />
+          <Card.Img variant="top" className="image" src={image} />
           <Card.Body>
             <Card.Title>Add to Chrome</Card.Title>
             <Card.Text>Minimum version 62</Card.Text>
@@ -51,11 +50,7 @@ function HomeDownload() {
         </Card>
 
         <Card className="card">
-          <Card.Img
-            variant="top"
-            className="image"
-            src="src\assets\logo-firefox.svg"
-          />
+          <Card.Img variant="top" className="image" src={image2} />
           <Card.Body>
             <Card.Title>Add to Firefox</Card.Title>
             <Card.Text>Minimum version 55</Card.Text>
@@ -73,11 +68,7 @@ function HomeDownload() {
         </Card>
 
         <Card className="card">
-          <Card.Img
-            variant="top"
-            className="image"
-            src="src\assets\logo-opera.svg"
-          />
+          <Card.Img variant="top" className="image" src={image3} />
           <Card.Body>
             <Card.Title>Add to Opera</Card.Title>
             <Card.Text>Minimum version 46</Card.Text>

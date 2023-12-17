@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import "../scss/HomeBar.scss";
+import logo from "../assets/logo-bookmark.svg";
 
 function HomeBar() {
   return (
@@ -11,11 +12,7 @@ function HomeBar() {
         <Container className="custom-container">
           <div className="wrapper">
             <Navbar.Brand href="/">
-              <img
-                src="src\assets\logo-bookmark.svg"
-                alt="logo"
-                className="navbar-logo"
-              />
+              <img src={logo} alt="logo" className="navbar-logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="burger" />
           </div>
